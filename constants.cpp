@@ -98,6 +98,8 @@ void Constants::SetConstants(void)
 	Constants::rsun_cgs= 6.96e10;	//solar radius in cm
 	Constants::lsun_cgs= (3.839e26)*GSL_CONST_CGSM_JOULE;//solar luminosity in W
 	Constants::angstrom_cgs = GSL_CONST_CGSM_ANGSTROM;	//angstrom in cm
+	Constants::au_cgs = GSL_CONST_CGSM_ASTRONOMICAL_UNIT;	//au in cm
+
 	Constants::G_cosmo  = G*msun/(1.0e6*kpc); //G in (km/s)^2 kpc msun^-1
 	Constants::G_gal    = G*(msun/pow(kpc,3.0))*pow(year_in_sec*1.0e9,2);
 	Constants::a_bohr_cgs = GSL_CONST_CGSM_BOHR_RADIUS;	//bohr radius in cm
@@ -148,6 +150,7 @@ void Constants::ShowConstants(void)
 	printf("rsun_cgs        =\t%e\n",rsun_cgs);
 	printf("lsun_cgs        =\t%e\n",lsun_cgs);
 	printf("angstom_cgs     =\t%e\n",angstrom_cgs);
+	printf("au_cgs          =\t%e\n",au_cgs);
 	printf("G_cosmo         =\t%e (km/s)^2 Msun^-1 kpc \n",G_cosmo);
 	printf("G_gal           =\t%e kpc^3 Msun^-1 Gyr^-2\n",G_gal);
 

@@ -266,6 +266,10 @@ class Constants
  		 *  \brief An angstrom in cm */
 		double angstrom_cgs;
 
+		/*! \var double au_cgs
+		 *	\brief an astronomical unit in cm */
+		double au_cgs;
+		
 		/*! \fn Constants(void)
 	 	 *  \brief Constructor for the Constants class */
 		Constants(void);
